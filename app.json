@@ -1,15 +1,19 @@
 {
   "expo": {
-    "name": "news_feeds_musala",
-    "slug": "news_feeds_musala",
+    "name": "newsfeed",
+    "slug": "newsfeed",
+    "privacy": "public",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+    "notification": {
+      "icon": "./assets/images/logo.png"
     },
+    "icon": "./assets/images/logo.png",
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -17,16 +21,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "buildNumber": "1.0.0",
+      "bundleIdentifier": "app.newsfeed.com",
+      "userInterfaceStyle": "automatic"
     },
+
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+      "package": "app.newsfeed.com",
+      "versionCode": 0
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "scheme": "newsapi"
+
   }
 }
